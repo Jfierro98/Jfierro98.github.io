@@ -8,26 +8,158 @@
 
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"  >
+    <script src="script.js" type=""></script>
 
   </head>
-  <style>
-      body {
-          background-color: #000000;
-      }
-  </style>
   <body>
-    <div class="container-fluid p-5">
-      <div class="row">
 
-        <div class="col-sm-3">
-           <img src="https://img.search.brave.com/PqH52_HjYgJrDvQlwoTwxq1m-kL5u57V1zQXwFzF04U/rs:fit:1200:800:1/g:ce/aHR0cHM6Ly93d3cu/bGFrZXN1cGVyaW9y/LmNvbS9kb3dubG9h/ZHMvODM2OS9kb3du/bG9hZC80MTEuUEMu/R1AuanBnP2NiPTA3/ZmVkZThkM2M2MWY1/MTMyODA5ZDc2NWMz/YWRhMDkxJnc9MTIw/MA" class="img-fluid rounded-top|" alt="">
+    <div class="container-fluid p-5"  >
+        <div class="row">
+            <div class="col-sm-12 col-md-3 " style="display: flex; justify-content: center;">
+                <img class="image-cv m-3" src="elon.jpg">
+            </div>
+            <div class="col-sm-12 col-md-9 p-5" >
+                     <div class="row">
+                        <span class="m-2" style="display: flex; justify-content: center;" id="nombre"></span>
+                     </div> 
+                     <div class="row">
+                        <span class="m-2" style="display: flex; justify-content: center;" id="carrera"></span>
+                     </div> 
+                     <div class="row" style=" height: 1px; width: 100%; background-color: yellowgreen;">
+                         
+                     </div>
+
+            </div>
+            
         </div>
-        
-      </div>
+        <div class="row p-4">
+            <div class="col-sm-6  col-md-4">
+                <div class="row">
+                    <h5 class="m-2"> 
+                        About me
+                    </h5>
+    
+                    <br>
+                    <p style="text-align: justify;">
+                        Great motivation to continue perfecting skills and growing professionally. I am passionate about technology and its applications in daily life, with future goals always thinking about entrepreneurship and new ways to change the world.
+                    </p>
+                </div>
+                <div class="row">
+                    <h5>
+                        Contact Information
+                    </h5>
+                    <p>
+                        <b>Email: </b> javier.fierro.dev@gmail.com <br>
+                        <b>Telephone:</b> (+52) 6521037913
+                    </p>
+                </div>
+                
+            </div>
+            
+
+            <div class="col-sm-6 col-md-6">
+                <h5>My skils</h5>
+                <p>
+                    I am a full stack developer 
+                </p>
+                <p><ul>
+                   <li> Knowledge about databases:  
+                       <ul>
+                           <li>MySQl
+                            <li>SQL Server
+                            <li>Mongo DB
+                            <li>Couch DB
+                       </ul>
+                       <li> Knowledge about servers:  
+                        <ul>
+                            <li>Windows Server
+                             <li>Ubuntu Server
+                             <li>Red Hat
+                        </ul>
+                        <li> Knowledge about linux:  
+                            <ul>
+                                <li>Ubuntu
+                                 <li>Kali
+                                 <li>Parrot OS
+                            </ul>
+                    <li>MS Office.
+                    <li>Knowledge about networks.
+                    <li>Installation and configuration (hardware and software).     
+                    <li>User support (hardware and software).
+                    <li>Preventive and corrective support to computer equipment.
+                    <li>AutoCAD.
+                    <li>Solidworks 
+                    <li>Programming languages:
+                        <ul>
+                            <li>C 
+                            <li>C++
+                            <li>JavaScript
+                            <li>SQL
+                            <li>Python
+                            <li>PHP
+                            <li>Python
+                            <li>C#
+                            <li>Visual Basic
+                        </ul>
+
+                </ul>
+                </p>
+                
+            </div>
+        </div>
+
     </div>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script >
+        $(document).ready( function() {
+            my()
+            my2()
+        }
+            
+        )
+        let timeout;
+        let timeout2;
+        var i=0;
+        var j=0;
+        
+        
+        function my (){
+            timeout = setTimeout(fill, 75);
+        }
+        function fill (){
+            if($("#nombre").text().length < nombre.length){
+                $("#nombre").text($("#nombre").text() + nombre[i])
+                i++;
+                my();
+            
+            }
+        }
+        function my2 (){
+            timeout2 = setTimeout(fill2, 75);
+        }
+        function fill2 (){
+            if($("#carrera").text().length < carrera.length){
+                $("#carrera").text($("#carrera").text() + carrera[j])
+                j++;
+                my2();
+            
+            }
+        }
+
+
+        var nombre = "Javier Arturo Fierro Vargas"
+        var carrera = "System Computer Engineering"
+        var abecedario="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+        
+
+
+
+    </script>
+</body>
 </html>
