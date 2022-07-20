@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" type=""></script>
+    
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             </div>
             <div id="menu_opciones">
                 <div id="menu_opciones_izq">
-                    <div class="opcion_menu">
+                    <div class="opcion_menu" id="calculator" onclick="calcDisplay()">
                         <img src="cal_icon.png" alt="">
                         <br>
                         <label for="">Calculator</label>
@@ -93,9 +94,9 @@
                     <label for="">Calculator</label>
                     <br>
                     <div class="but_ventana">
-                        <div class="button_ventana minimizar"><span>_</span></div>
+                        <div class="button_ventana minimizar" onclick="calcDisplay()"><span>_</span></div>
                         <div class="button_ventana maximizar" disabled></div>
-                        <div class="button_ventana cerrar"><span>X</span></button>
+                        <div class="button_ventana cerrar" onclick="calcDisplay()"><span>X</span></button>
                         </div>
 
                     </div>
@@ -178,49 +179,7 @@
 <script>
     
 
-    let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
-
-    el2 = document.querySelector('.pantalla_icono')
-    // when the user clicks down on the element
-    el2.addEventListener('mousedown', function (e) {
-        e.preventDefault();
-        // get the starting position of the cursor
-        startPosX = e.clientX;
-        startPosY = e.clientY;
-        document.addEventListener('mousemove', mouseMove);
-        document.addEventListener('mouseup', function () {
-            document.removeEventListener('mousemove', mouseMove);
-        });
-
-    });
-    el = document.querySelector('#calculadora')
-    // when the user clicks down on the element
-    el.addEventListener('mousedown', function (e) {
-        e.preventDefault();
-        // get the starting position of the cursor
-        startPosX = e.clientX;
-        startPosY = e.clientY;
-        document.addEventListener('mousemove', mouseMove);
-        document.addEventListener('mouseup', function () {
-            document.removeEventListener('mousemove', mouseMove);
-        });
-
-    });
-
-
-    function mouseMove(e) {
-        // calculate the new position
-        newPosX = startPosX - e.clientX;
-        newPosY = startPosY - e.clientY;
-
-        // with each move we also want to update the start X and Y
-        startPosX = e.clientX;
-        startPosY = e.clientY;
-
-        // set the element's new position:
-        el.style.top = (el.offsetTop - newPosY) + "px";
-        el.style.left = (el.offsetLeft - newPosX) + "px";
-    }
+    
 
 </script>
 
