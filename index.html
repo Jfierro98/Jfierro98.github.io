@@ -1,166 +1,227 @@
-<!doctype html>
-<html lang="en"><!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My profile</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"  >
-    <script src="script.js" type=""></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 
-  </head>
-  <body>
-
-    <div class="container-fluid p-5"  >
-        <div class="row">
-            <div class="col-sm-12 col-md-3 " style="display: flex; justify-content: center;">
-                <img class="image-cv  m-3" src="elon.jpg">
+<body>
+    <div id="monitor" >
+        <div id="menu" style="display: none;">
+            <div id="menu_fotografia">
+                <img src="Koala.jpg" alt="" srcset="">
+                <label for="">Javier Fierro</label>
             </div>
-            <div class="col-sm-12 col-md-9 p-5" >
-                     <div class="row">
-                        <span class="m-2" style="text-align: center; display: flex; justify-content: center;" id="nombre"></span>
-                     </div> 
-                     <div class="row">
-                        <span class="m-2" style="text-align: center; display: flex; justify-content: center;" id="carrera"></span>
-                     </div> 
-
-
+            <div id="menu_opciones">
+                <div id="menu_opciones_izq">
+                    <div class="opcion_menu">
+                        <img src="cal_icon.png" alt="">
+                        <br>
+                        <label for="">Calculator</label>
+                        <br>
+                        <small>Calculator</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                </div>
+                <div id="menu_opciones_der">
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                    <div class="opcion_menu">
+                        <img src="Koala.jpg" alt="">
+                        <br>
+                        <label for="">Internet</label>
+                        <br>
+                        <small>Internet Explorer</small>
+                    </div>
+                </div>
             </div>
-            
         </div>
-        <div class="row" style=" height: 1px; width: 100%; background-color: yellowgreen;">
-                         
-        </div>
-        <div class="row p-4">
-            <div class="col-sm-6  col-md-4">
-                <div class="row">
-                    <h5 class="m-2"> 
-                        About me
-                    </h5>
-    
+        <div id="pantalla" >
+            <div id="icono_recycle" class="pantalla_icono">
+                <img src="recycle.png" alt="">
+                <br>
+                <small>Recycle Bin</small>
+            </div>
+            <div id="calculadora">
+                <div class="barra_ventana">
+                    <img src="cal_icon.png" alt="" srcset="">
                     <br>
-                    <p style="text-align: justify;">
-                        Great motivation to continue perfecting skills and growing professionally. I am passionate about technology and its applications in daily life, with future goals always thinking about entrepreneurship and new ways to change the world.
-                    </p>
+                    <label for="">Calculator</label>
+                    <br>
+                    <div class="but_ventana">
+                        <div class="button_ventana minimizar"><span>_</span></div>
+                        <div class="button_ventana maximizar" disabled></div>
+                        <div class="button_ventana cerrar"><span>X</span></button>
+                        </div>
+
+                    </div>
+
+
                 </div>
-                <div class="row">
-                    <h5>
-                        Contact Information
-                    </h5>
-                    <p>
-                        <b>Email: </b> javier.fierro.dev@gmail.com <br>
-                        <b>Telephone:</b> (+52) 6521037913
-                    </p>
+                <div id="cuerpo_ventana">
+                    <div id="opciones_ventana"><span>Edition </span> <span>View </span> <span>Help</span></div>
+                    <div id="pantalla_calculadora">
+
+                    </div>
                 </div>
-                
+                <div id="teclado">
+                    <div class="r_teclado">
+                        <div class="boton_teclado_d text_red" onclick="">Backspace</div>
+                        <div class="boton_teclado_d text_red">CE</div>
+                        <div class="boton_teclado_d text_red">C</div>
+
+                    </div>
+                    <div class="r_teclado">
+                        <div class="boton_teclado text_red">MC</div>
+                        <div class="boton_teclado text_blue">7</div>
+                        <div class="boton_teclado text_blue">8</div>
+                        <div class="boton_teclado text_blue">9</div>
+                        <div class="boton_teclado text_red">/</div>
+                        <div class="boton_teclado">sqrt</div>
+                    </div>
+                    <div class="r_teclado">
+                        <div class="boton_teclado text_red">MR</div>
+                        <div class="boton_teclado text_blue">4</div>
+                        <div class="boton_teclado text_blue">5</div>
+                        <div class="boton_teclado text_blue">6</div>
+                        <div class="boton_teclado text_red">*</div>
+                        <div class="boton_teclado text_red">%</div>
+                    </div>
+                    <div class="r_teclado">
+                        <div class="boton_teclado text_red">MS</div>
+                        <div class="boton_teclado text_blue">1</div>
+                        <div class="boton_teclado text_blue">2</div>
+                        <div class="boton_teclado text_blue">3</div>
+                        <div class="boton_teclado text_red">.</div>
+                        <div class="boton_teclado text_blue">1/X</div>
+                    </div>
+                    <div class="r_teclado">
+                        <div class="boton_teclado text_red">M+</div>
+                        <div class="boton_teclado text_blue">0</div>
+                        <div class="boton_teclado text_blue">+/-</div>
+                        <div class="boton_teclado text_blue">,</div>
+                        <div class="boton_teclado text_red">+</div>
+                        <div class="boton_teclado text_red">=</div>
+                    </div>
+
+
+
+                </div>
             </div>
-            
 
-            <div class="col-sm-6 col-md-8">
-                <h5>My skils</h5>
-                <p>
-                    I am a full stack developer 
-                </p>
-                <p><ul>
-                   <li> Knowledge about databases:  
-                       <ul>
-                           <li>MySQl
-                            <li>SQL Server
-                            <li>Mongo DB
-                            <li>Couch DB
-                       </ul>
-                       <li> Knowledge about servers:  
-                        <ul>
-                            <li>Windows Server
-                             <li>Ubuntu Server
-                             <li>Red Hat
-                        </ul>
-                        <li> Knowledge about linux:  
-                            <ul>
-                                <li>Ubuntu
-                                 <li>Kali
-                                 <li>Parrot OS
-                            </ul>
-                    <li>MS Office.
-                    <li>Knowledge about networks.
-                    <li>Installation and configuration (hardware and software).     
-                    <li>User support (hardware and software).
-                    <li>Preventive and corrective support to computer equipment.
-                    <li>AutoCAD.
-                    <li>Solidworks 
-                    <li>Programming languages:
-                        <ul>
-                            <li>C 
-                            <li>C++
-                            <li>JavaScript
-                            <li>SQL
-                            <li>Python
-                            <li>PHP
-                            <li>Python
-                            <li>C#
-                            <li>Visual Basic
-                        </ul>
 
-                </ul>
-                </p>
-                
+            <div id="barra">
+
+                <div id="brillo"></div>
+                <div id="boton_inicio" onclick="menuDisplay()">
+                    <div id="boton_logo">
+                        <img src="logo.png" alt="logo" srcset="">
+
+                    </div>
+                    <div id="boton_texto">
+                        start
+                    </div>
+                </div>
+                <div id="clock">
+
+                </div>
             </div>
         </div>
 
     </div>
-      
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script >
-        $(document).ready( function() {
-            my()
-            my2()
-        }
-            
-        )
-        let timeout;
-        let timeout2;
-        var i=0;
-        var j=0;
-        
-        
-        function my (){
-            timeout = setTimeout(fill, 75);
-        }
-        function fill (){
-            if($("#nombre").text().length < nombre.length){
-                $("#nombre").text($("#nombre").text() + nombre[i])
-                i++;
-                my();
-            
-            }
-        }
-        function my2 (){
-            timeout2 = setTimeout(fill2, 75);
-        }
-        function fill2 (){
-            if($("#carrera").text().length < carrera.length){
-                $("#carrera").text($("#carrera").text() + carrera[j])
-                j++;
-                my2();
-            
-            }
-        }
 
-
-        var nombre = "Javier Arturo Fierro Vargas"
-        var carrera = "System Computer Engineering"
-        var abecedario="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-
-        
-
-
-
-    </script>
 </body>
+<script>
+    
+
+    let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
+
+    el2 = document.querySelector('.pantalla_icono')
+    // when the user clicks down on the element
+    el2.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        // get the starting position of the cursor
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mouseup', function () {
+            document.removeEventListener('mousemove', mouseMove);
+        });
+
+    });
+    el = document.querySelector('#calculadora')
+    // when the user clicks down on the element
+    el.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        // get the starting position of the cursor
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mouseup', function () {
+            document.removeEventListener('mousemove', mouseMove);
+        });
+
+    });
+
+
+    function mouseMove(e) {
+        // calculate the new position
+        newPosX = startPosX - e.clientX;
+        newPosY = startPosY - e.clientY;
+
+        // with each move we also want to update the start X and Y
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+
+        // set the element's new position:
+        el.style.top = (el.offsetTop - newPosY) + "px";
+        el.style.left = (el.offsetLeft - newPosX) + "px";
+    }
+
+</script>
+
+</html>
