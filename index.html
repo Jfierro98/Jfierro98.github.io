@@ -5,89 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javier Fierro</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" type=""></script>
-    
+
 </head>
 
 <body>
-    <div id="monitor" >
-        <div id="menu" style="display: none;">
-            <div id="menu_fotografia">
-                <img src="Koala.jpg" alt="" srcset="">
-                <label for="">Javier Fierro</label>
-            </div>
-            <div id="menu_opciones">
-                <div id="menu_opciones_izq">
-                    <div class="opcion_menu" id="calculator" onclick="calcDisplay()">
-                        <img src="cal_icon.png" alt="">
-                        <br>
-                        <label for="">Calculator</label>
-                        <br>
-                        <small>Calculator</small>
+    <div id="monitor">
+        <div id="bios"></div>
+        <div id="load"></div>
+        <div id="pantalla">
+            <div id="menu" style="display: none;">
+                <div id="menu_fotografia">
+                    <img src="elon.jpg" alt="" srcset="">
+                    <label for="">Javier Fierro</label>
+                </div>
+                <div id="menu_opciones">
+                    <div id="menu_opciones_izq">
+                        <div class="opcion_menu" id="calculator" onclick="calcDisplay()">
+                            <img src="cal_icon.png" alt="">
+                            <br>
+                            <label for="">Calculator</label>
+                            <br>
+                            <small>Calculator</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
                     </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
+                    <div id="menu_opciones_der">
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
+                        <div class="opcion_menu">
+                            <img src="Koala.jpg" alt="">
+                            <br>
+                            <label for="">Internet</label>
+                            <br>
+                            <small>Internet Explorer</small>
+                        </div>
                     </div>
                 </div>
-                <div id="menu_opciones_der">
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                    <div class="opcion_menu">
-                        <img src="Koala.jpg" alt="">
-                        <br>
-                        <label for="">Internet</label>
-                        <br>
-                        <small>Internet Explorer</small>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div id="pantalla" >
             <div id="icono_recycle" class="pantalla_icono">
                 <img src="recycle.png" alt="">
                 <br>
                 <small>Recycle Bin</small>
             </div>
-            <div id="calculadora">
+            <div id="calculadora" style="display: none;">
                 <div class="barra_ventana">
                     <img src="cal_icon.png" alt="" srcset="">
                     <br>
@@ -153,10 +155,7 @@
 
                 </div>
             </div>
-
-
             <div id="barra">
-
                 <div id="brillo"></div>
                 <div id="boton_inicio" onclick="menuDisplay()">
                     <div id="boton_logo">
@@ -177,9 +176,72 @@
 
 </body>
 <script>
-    
 
-    
+    function menuDisplay() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display == "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+
+
+
+    function calcDisplay() {
+        var calc = document.getElementById("calculadora");
+        if (calc.style.display == "none") {
+            calc.style.display = "block";
+            menu.style.display = "none";
+        } else {
+            calc.style.display = "none";
+        }
+    }
+
+    let newPosX = 0, newPosY = 0, startPosX = 0, startPosY = 0;
+
+    el2 = document.querySelector('.pantalla_icono')
+    // when the user clicks down on the element
+    el2.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        // get the starting position of the cursor
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mouseup', function () {
+            document.removeEventListener('mousemove', mouseMove);
+        });
+
+    });
+    el = document.querySelector('#calculadora')
+    // when the user clicks down on the element
+    el.addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        // get the starting position of the cursor
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mouseup', function () {
+            document.removeEventListener('mousemove', mouseMove);
+        });
+
+    });
+
+
+    function mouseMove(e) {
+        // calculate the new position
+        newPosX = startPosX - e.clientX;
+        newPosY = startPosY - e.clientY;
+
+        // with each move we also want to update the start X and Y
+        startPosX = e.clientX;
+        startPosY = e.clientY;
+
+        // set the element's new position:
+        el.style.top = (el.offsetTop - newPosY) + "px";
+        el.style.left = (el.offsetLeft - newPosX) + "px";
+    }
+
 
 </script>
 
