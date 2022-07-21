@@ -16,3 +16,22 @@ document.addEventListener('DOMContentLoaded', function() {
         
     }, 3000);
     });
+
+    function menuDisplay() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display == "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+
+    function calcDisplay() {
+        var calc = document.getElementById("calculadora");
+        if (calc.style.display == "none") {
+            calc.style.display = "block";
+            menu.style.display = "none";
+        } else {
+            calc.style.display = "none";
+        }
+    }
